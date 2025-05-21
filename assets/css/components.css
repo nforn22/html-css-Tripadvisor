@@ -139,3 +139,59 @@ button:hover {
     border-radius: 0 0 28px 28px;
     display: block;
 }
+
+section[class^="category-"] {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+}
+
+.category {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+}
+  
+.category-desc {
+    flex: 0 0 250px;
+}
+  
+.category-desc h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.category-desc p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.category-desc a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+.carousel {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+  
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+  
+.carousel-item {
+    width: 250px;
+    height: 180px;
+    background-color: #ddd;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+  
