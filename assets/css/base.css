@@ -4,8 +4,12 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "TS-Reg", sans-serif;
     background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: "TS-Med", sans-serif;
 }
 
 p a {

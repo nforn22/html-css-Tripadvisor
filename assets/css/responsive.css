@@ -58,11 +58,11 @@
 }
 
 @media (max-width: 768px) {
-    .guides-container {
-      justify-content: center;
-    }
-    
-    .travel-guides-title {
-      text-align: center;
-    }
+  .guides-container {
+    justify-content: center;
+  }
+  
+  .travel-guides-title {
+    text-align: center;
+  }
 }
