@@ -18,6 +18,9 @@ header {
     width: 100%;
     padding: 10px 0;
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .head {
