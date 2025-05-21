@@ -108,3 +108,28 @@ main {
     flex-direction: column;
     align-items: flex-end;
 }
+
+.travel-guides {
+    padding: 60px 40px;
+    background-color: #fff;
+    width: 100%;
+}
+  
+.travel-guides-title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.guides-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}

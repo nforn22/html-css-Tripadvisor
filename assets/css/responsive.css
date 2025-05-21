@@ -56,3 +56,13 @@
         border-radius: 0 0 16px 16px;
     }
 }
+
+@media (max-width: 768px) {
+    .guides-container {
+      justify-content: center;
+    }
+    
+    .travel-guides-title {
+      text-align: center;
+    }
+}
