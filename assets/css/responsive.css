@@ -10,11 +10,6 @@
         justify-content: flex-start;
     }
 
-    .filter {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .img-grid {
         grid-template-columns: 1fr;
         height: auto;
@@ -65,4 +60,54 @@
   .travel-guides-title {
     text-align: center;
   }
+}
+
+@media (max-width: 1200px) {
+    .filter {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    .filter button {
+      flex: 1 0 23%;    /*4 boutons par ligne (100/4 = 25, on laisse un peu de marge pour le gap) */
+       min-width: 150px;
+      max-width: 100%;
+      margin: 0;
+      font-size: 16px;
+      padding: 12px 0;
+      box-sizing: border-box;
+    }
+    .filter .filter-extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
+        padding-bottom: 8px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+    .filter button {
+        flex: 0 0 auto;
+        min-width: 160px;
+        max-width: 220px;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 1025px) {
+    .nav-buttons span {
+      display: none;
+    }
+    .nav-buttons .login-btn span {
+        display: inline;
+    }
 }

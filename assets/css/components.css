@@ -90,6 +90,10 @@ button:hover {
     background: #444;
 }
 
+.filter .filter-extra {
+    display: none;
+}
+
 .organize-box {
     background: #FE5D5D;
     color: #111;
