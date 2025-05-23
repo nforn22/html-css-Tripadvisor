@@ -6,17 +6,25 @@
     <title>TripAdvisor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="head">
-                <img src="./assets/img/Tripadvisor-Logo-650x366.png" alt="Logo Tripadvisor">
+                <div class="header-left">
+                    <button class="burger-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <img src="https://tripadvisor-lereacteur.netlify.app/assets/img/Tripadvisor_logo.svg" alt="Logo Tripadvisor" class="header-logo">
                 <div class="nav-buttons">
                   <button type="button"><i class="fa-solid fa-pen"></i> <span>Avis</span></button>
                   <button type="button"><i class="fa-regular fa-heart"></i> <span>Voyages</span></button>
                   <button type="button"><i class="fa-regular fa-bell"></i> <span>Alertes</span></button>
                   <button type="button" class="login-btn"><span>Connectez-vous</span></button>
+                  <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                   <button type="button"><i class="fa-solid fa-cart-shopping"></i> <span>Panier</span></button>
                 </div>
             </div>
@@ -143,6 +151,66 @@
               </section>
         </main>
     </div>
+
+    <div class="modal-overlay hidden" id="contactModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeModalBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+          <h2 class="modal-title">Formulaire de contact</h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              class="form-input"
+              placeholder="Prénom"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              class="form-input"
+              placeholder="Nom"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="Email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <textarea 
+            id="message"
+            name="message"
+            class="form-input form-textarea"
+            placeholder="Écrivez ici votre message..."
+            required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Envoyer le formulaire
+          </button>
+        </form>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="footer-content">
         <img src="*" alt="Logo TripAdvisor" class="tripadvisor-logo">
